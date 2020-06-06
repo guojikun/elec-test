@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow, Menu, Tray, ipcMain } from 'electron'
+import { app, BrowserWindow, Menu, ipcMain } from 'electron'
 const path = require('path')
 
 /**
@@ -61,8 +61,7 @@ ipcMain.on('min', e => {
     mainWindow.minimize()
 })
 ipcMain.on('max', e => {
-    console.log(e)
-    const isMax = mainWindow.isMaximized()
+    const isMax = mainWindow.isMaximized() // 总是返回false
     if (isMax) {
         console.log(true)
         mainWindow.unmaximize()
