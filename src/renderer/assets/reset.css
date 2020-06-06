@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #c62f2f;
+    --top-header-color: #e29595;
+    --top-header-color-hover: #ffffff;
+}
+
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
